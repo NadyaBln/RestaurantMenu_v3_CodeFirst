@@ -1,13 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using Microsoft.AspNetCore.Mvc;
+using RestaurantMenu_v3_CodeFirst.Entities;
+using System.Collections.Generic;
 
-namespace RestaurantMenu_v3_CodeFirst.Entities
+namespace RestaurantMenu_v3_CodeFirst.Models
 {
-    public class Product
+    public class ProductModel : Controller
     {
-        //public Product()
-        //{
-        //    this.OrderItems = new HashSet<OrderItem>();
-        //}
         public int ProductId { get; set; }
         public string Title { get; set; }
         public int Calories { get; set; }
